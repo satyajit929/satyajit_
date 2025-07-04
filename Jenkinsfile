@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Code') {
             steps {
-              git 'https://github.com/satyajit929/satyajit_Flipkart.git'
+              git 'https://github.com/satyajit929/satyajit_.git'
             }
         }
         stage('code-build') {
