@@ -12,9 +12,9 @@ pipeline {
                  sh "mvn clean package"
             }
         }
-        stage('Image-build') {
+        stage('Artifactory') {
             steps {
-                sh 'docker build -t tomcat:app .'
+                sh 'echo "Uploading artifact to Artifactory..."'
             }
         }
         stage('Deploy') {
