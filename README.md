@@ -1,8 +1,8 @@
-Flipkart Frontpage Clone with CI/CD Pipeline 
+# Flipkart Frontpage Clone with CI/CD Pipeline 
 
 This project is a Flipkart front page UI clone built with HTML and CSS, integrated into a full CI/CD pipeline using Jenkins, deployed via Apache Tomcat, and the build artifact is stored in Nexus Artifactory.
 
-1) Live Environment Setup
+## Live Environment Setup
 
    All tools and services are hosted using IP and port in the browser:
 
@@ -15,7 +15,7 @@ This project is a Flipkart front page UI clone built with HTML and CSS, integrat
    Each service is hosted on its own EC2 instance or separate local/server environment, accessible via browser using the
    assigned IP address and port.
 
-2) Tech Stack Used
+## Tech Stack Used
 
        | Tool                 | Purpose                            |
        |--------------------- | ---------------------------------- |
@@ -27,7 +27,7 @@ This project is a Flipkart front page UI clone built with HTML and CSS, integrat
        | Apache Tomcat (8080) | Application deployment             |
        | EC2 or Localhost     | Hosting services                   |
 
-3) Folder Structure
+## Folder Structure
 
        satyajit_/
        ├── flipkart/
@@ -37,7 +37,7 @@ This project is a Flipkart front page UI clone built with HTML and CSS, integrat
        │       └── index.html
        ├── pom.xml
 
-5) Jenkins Pipeline Flow
+## Jenkins Pipeline Flow
 
    a) Clone Code: Jenkins pulls the latest source code from GitHub.
 
@@ -45,8 +45,4 @@ This project is a Flipkart front page UI clone built with HTML and CSS, integrat
 
    c) Artifactory Upload: The .war file is uploaded to Nexus Artifactory (http://<nexus-ip>:8081).
 
-   d) Deploy: The .war file is copied or deployed to Tomcat (http://<tomcat-ip>:8080/satyajit_) — either manually or via shel
-
-      script in Jenkins.
-
-
+   d) Deploy: The .war file is copied or deployed to Tomcat (http://<tomcat-ip>:8080/satyajit_) — either manually or via shellscript in Jenkins.
